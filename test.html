@@ -21,7 +21,9 @@
             <h1 style="text-align: center"> <b> Register </b> </h1>
         </div>
         <div id="innhold">
-            <form action="/action_page.php">
+            <form name="myForm" action="/action_page_post.php"
+            onsubmit="return validateForm()" method="post">
+
               <label for="fname">First Name</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name..">
           
@@ -36,7 +38,7 @@
                 <option value="england">England</option>
                 <option value="germany">Germany</option>
                 <option value="norway">Norway</option>
-                <option value="sweden">Sweden</option>
+                <option value="sweeden">Sweden</option>
                 <option value="usa">USA</option>
                 <option value="sa">Saudi Arabia</option>
                 <option value="qatar">Qatar</option>
@@ -49,7 +51,7 @@
               </select>
             <label for="subscribe"> Sign up for The Vision Newsletter.</label>
             <input type="radio" id="subscribe" name="subscribe">
-              <button type="button" onclick="alert('Gudt det')">Submit</button>
+              <button type="button" onclick="alert('Registered')">Submit</button>
             </form>
           
           </div>

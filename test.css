@@ -1,4 +1,4 @@
-#meny {
+#meny {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -219,4 +219,17 @@ button {
 
 button:hover {
     background-color: #23A2B6;
+}
+
+input[type=radio] {
+    position: absolute;
+    left: 0;
+
+    
+}
+
+label[for=subscribe] {
+    position: relative;
+    left: 2%;
+    
 }
